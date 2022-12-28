@@ -1075,3 +1075,249 @@ UERANSIM v3.2.6
 [2022-12-08 22:31:43.899] [nas] [debug] PDU Session Establishment Accept received
 [2022-12-08 22:31:43.899] [nas] [info] PDU Session establishment is successful PSI[1]
 [2022-12-08 22:31:43.911] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.70] is up.
+UERANSIM v3.2.6
+[2022-12-28 08:37:21.255] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:37:21.256] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 08:38:02.140] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:38:02.140] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:38:41.937] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:38:41.939] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 08:38:58.576] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:38:58.577] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:39:37.937] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:39:37.938] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:39:37.956] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:39:37.956] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 08:40:16.699] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:40:16.699] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 08:41:16.294] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:41:16.294] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:42:17.248] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:42:17.249] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:42:17.276] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:42:17.276] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:42:19.450] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:42:19.451] [nas] [error] PLMN selection failure, no cells in coverage
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 08:42:34.648] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:42:34.648] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:42:34.667] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:42:34.667] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:42:34.682] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:42:34.682] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:42:36.850] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:42:36.861] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:42:37.724] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 08:42:37.737] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+[2022-12-28 08:42:39.066] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:42:39.069] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:42:39.650] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:42:39.650] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:42:39.650] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:42:39.650] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:42:40.170] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 08:42:40.170] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 08:42:40.784] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+[2022-12-28 08:42:43.814] [nas] [debug] De-registration required due to [NORMAL]
+UERANSIM v3.2.6
+[2022-12-28 08:51:09.009] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:51:09.011] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:51:09.036] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:09.036] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:09.036] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:09.036] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:11.218] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:51:11.219] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:51:13.446] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:51:13.446] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:51:14.018] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:51:14.018] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:51:14.018] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:51:14.019] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:51:14.080] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:14.080] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:14.080] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 08:51:14.080] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 08:51:14.559] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+UERANSIM v3.2.6
+[2022-12-28 08:51:33.627] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:51:33.629] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:51:33.654] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 08:51:35.837] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:51:35.837] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:51:38.039] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:51:38.039] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:51:38.629] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:51:38.629] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:51:38.630] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:51:38.630] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:51:38.684] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:38.684] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:39.140] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 08:51:39.140] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 08:51:43.703] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:43.703] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:43.734] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:43.734] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:48.734] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:48.734] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:48.759] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:48.759] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:53.782] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:53.782] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:51:53.830] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+[2022-12-28 08:51:58.866] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:51:58.866] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:52:03.905] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+[2022-12-28 08:52:08.652] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:52:08.652] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:52:08.652] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:52:08.652] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:52:08.888] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:52:08.888] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:52:08.975] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+[2022-12-28 08:52:14.033] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+[2022-12-28 08:52:24.134] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:52:24.134] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+UERANSIM v3.2.6
+[2022-12-28 08:52:47.560] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 08:52:47.563] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 08:52:47.603] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 08:52:47.605] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:52:47.605] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:52:49.762] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:52:49.765] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:52:51.970] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:52:51.972] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:52:52.562] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:52:52.562] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:52:52.573] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:52:52.573] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:52:53.071] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 08:52:53.084] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 08:52:53.635] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 08:52:57.662] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:52:57.662] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:53:03.702] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+[2022-12-28 08:53:15.804] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:53:15.804] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:53:21.840] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:53:21.840] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:53:22.598] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:53:22.598] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:53:22.613] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 08:53:22.613] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 08:53:22.900] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:53:22.941] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 08:53:27.889] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:53:27.889] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:53:29.853] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:53:29.853] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 08:53:35.893] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 08:53:35.893] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 09:05:41.781] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:05:41.781] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:05:41.798] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 09:05:41.818] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+[2022-12-28 09:05:43.989] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:05:43.989] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:05:46.200] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:05:46.200] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:05:46.796] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:05:46.796] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:05:46.796] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:05:46.796] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:05:47.301] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:05:47.301] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:05:47.882] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 09:06:07.022] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:06:07.023] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:06:07.053] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 09:06:09.229] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:06:09.243] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:06:11.445] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:06:11.445] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:06:12.025] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:06:12.025] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:06:12.040] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:06:12.040] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:06:12.546] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:06:12.546] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:06:14.080] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 09:06:14.080] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+UERANSIM v3.2.6
+[2022-12-28 09:08:30.579] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+UERANSIM v3.2.6
+[2022-12-28 09:08:30.589] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:08:32.800] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:08:32.816] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:08:35.024] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:08:35.039] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:08:35.596] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:08:35.596] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:08:35.596] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:08:35.596] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:08:36.137] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:08:36.152] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 09:08:49.733] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:08:49.733] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:08:49.759] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 09:08:49.759] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 09:08:49.760] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 09:08:49.760] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 09:08:51.945] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:08:51.945] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:08:54.153] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:08:54.153] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:08:54.735] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:08:54.735] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:08:54.735] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:08:54.735] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:08:55.254] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:08:55.254] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:08:56.818] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 09:08:56.820] [nas] [warning] PDU session release procedure could not start: PS[1] is not active already
+UERANSIM v3.2.6
+UERANSIM v3.2.6
+[2022-12-28 09:13:51.649] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:13:51.649] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2022-12-28 09:13:51.676] [nas] [debug] De-registration required due to [NORMAL]
+[2022-12-28 09:13:53.851] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:13:53.851] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:13:55.723] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 09:13:55.723] [nas] [error] PDU session establishment could not be triggered, UE is not registered
+[2022-12-28 09:13:56.053] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:13:56.053] [nas] [error] PLMN selection failure, no cells in coverage
+[2022-12-28 09:13:56.651] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:13:56.651] [rrc] [warning] Acceptable cell selection failed, no cell is in coverage
+[2022-12-28 09:13:56.651] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:13:56.651] [rrc] [error] Cell selection failure, no suitable or acceptable cell found
+[2022-12-28 09:13:57.154] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:13:57.154] [nas] [info] UE switches to state [MM-DEREGISTERED/NO-CELL-AVAILABLE]
+[2022-12-28 09:13:59.760] [nas] [debug] Sending PDU Session Establishment Request
+[2022-12-28 09:13:59.760] [nas] [error] PDU session establishment could not be triggered, UE is not registered
