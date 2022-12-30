@@ -79,8 +79,8 @@ def recordSIMCard(numbers=20):
     writeCurrentUeIMSI(currentUeIMSI + numbers)
 
 
-def retrievePDUId():
-    pdus = os.popen("/opt/module/UERANSIM/build/nr-cli -e ps-list").read()
+def retrievePDUId(ueId):
+    pdus = os.popen("/opt/module/UERANSIM/build/nr-cli -e ps-list " + ueId).read()
     pdu_count = pdus.count("PDU Session")
     pduId = random.randint(1, pdu_count + 1)
     return pduId
@@ -93,12 +93,12 @@ def randomCommands(ueId, over):
         command_id = random.choice(commands_id)
         command = commands[command_id]
         if command == "ps-release":
-            command = command + " " + str(retrievePDUId());
+            command = command + " " + str(retrievePDUId(ueId));
         print("LOG:  execute %s" % ("/opt/module/UERANSIM/build/nr-cli -e '%s' %s" % (command, ueId)))
         os.system("/opt/module/UERANSIM/build/nr-cli -e '%s' %s" % (command, ueId))
-        time.sleep(4)
+        time.sleep(5)
         if command == "deregister normal" or command == "ps-establish":
-            time.sleep(6)
+            time.sleep(5)
 
 
 def terminateAllUE():
