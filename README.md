@@ -67,3 +67,9 @@ python3 run.py --simcard 10 --ue 5 --sec 100
 
 1. 先注册一些UE在核心网站，`python3 run.py --simcard 10`
 2. 多个UE经常并行发送信令到核心网，`python3 run.py --ue 5 --sec 100`
+
+
+```
+T3550 expires, retransmit Registration Accept (retry: 1)
+T3560 expires, retransmit Security Mode Command (retry: 1)
+```

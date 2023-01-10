@@ -4,11 +4,11 @@ commands = [
     'ps-release',
     'ps-release-all',
     'deregister normal',
-    'ps-establish IPv4 --emergency',
-    'ps-establish IPv4 --sst 1 --sd 1 --dnn internet'
+    #'ps-establish IPv4 --emergency',
+    'ps-establish IPv4 --sst 1 --sd 66051 --dnn internet'
 ]
-
-commands_id = [2, 3, 4, 5, 6]
+commands_id = [2, 3, 4, 5]
+# commands_id = [2, 3, 4]
 
 
 # /api/subscriber/imsi-208930000000001/20893

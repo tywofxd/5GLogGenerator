@@ -26,6 +26,7 @@ import requests
 import json
 import time
 import random
+import shutil
 from requests import Response
 from resources import commands
 from resources import commands_id
@@ -74,7 +75,7 @@ def recordSIMCard(numbers=20):
         # print(data["plmnID"])
         # print(data)
         
-        time.sleep(10)
+        time.sleep(1)
         # nssai +=1
     writeCurrentUeIMSI(currentUeIMSI + numbers)
 
@@ -96,9 +97,9 @@ def randomCommands(ueId, over):
             command = command + " " + str(retrievePDUId(ueId));
         print("LOG:  execute %s" % ("/opt/module/UERANSIM/build/nr-cli -e '%s' %s" % (command, ueId)))
         os.system("/opt/module/UERANSIM/build/nr-cli -e '%s' %s" % (command, ueId))
-        time.sleep(5)
-        if command == "deregister normal" or command == "ps-establish":
-            time.sleep(5)
+        time.sleep(random.randint(5, 15))
+        if command == "deregister normal" or "ps-establish" in command:
+           time.sleep(20)
 
 
 def terminateAllUE():
@@ -115,10 +116,17 @@ def terminateAllUE():
 def startUEs(numbers=1):
     terminateAllUE()
     files = os.listdir("./config/")
+    log_dir = "./logs"
     files = random.sample(files, numbers)
-    
+    if os.path.exists(log_dir):
+        shutil.rmtree(log_dir)
+    os.makedirs(log_dir) 
     for file in files:
-        os.system("nohup /opt/module/UERANSIM/build/nr-ue -c ./config/%s &" % file)
+        # 保存到logs目录下，根据ue创建,
+        log_file = file.split('.')[0].split('-')[3]
+        os.system("nohup /opt/module/UERANSIM/build/nr-ue -c ./config/%s > ./logs/%s.out 2>&1 &" % (file, log_file))
+        time.sleep(1)
+        
 
 
 

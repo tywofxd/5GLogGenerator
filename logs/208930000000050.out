@@ -1,0 +1,241 @@
+UERANSIM v3.2.6
+[2023-01-09 12:03:07.989] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2023-01-09 12:03:07.993] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2023-01-09 12:03:07.993] [nas] [info] Selected plmn[208/93]
+[2023-01-09 12:03:07.993] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2023-01-09 12:03:07.993] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-01-09 12:03:07.993] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-01-09 12:03:07.993] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-01-09 12:03:07.996] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:03:07.996] [nas] [debug] Sending Initial Registration
+[2023-01-09 12:03:07.996] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-01-09 12:03:07.996] [rrc] [debug] Sending RRC Setup Request
+[2023-01-09 12:03:07.996] [rrc] [info] RRC connection established
+[2023-01-09 12:03:07.996] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-01-09 12:03:07.996] [nas] [info] UE switches to state [CM-CONNECTED]
+[2023-01-09 12:03:08.016] [nas] [debug] Authentication Request received
+[2023-01-09 12:03:08.024] [nas] [debug] Security Mode Command received
+[2023-01-09 12:03:08.024] [nas] [debug] Selected integrity[2] ciphering[0]
+[2023-01-09 12:03:08.046] [nas] [debug] Registration accept received
+[2023-01-09 12:03:08.046] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2023-01-09 12:03:08.046] [nas] [debug] Sending Registration Complete
+[2023-01-09 12:03:08.046] [nas] [info] Initial Registration is successful
+[2023-01-09 12:03:08.046] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:03:08.048] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:03:08.288] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:03:08.288] [nas] [info] PDU Session establishment is successful PSI[1]
+[2023-01-09 12:03:08.328] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun56, 10.60.0.57] is up.
+[2023-01-09 12:03:53.211] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:03:53.341] [nas] [error] No response from RRC from UAC checks, considering access attempt is barred
+[2023-01-09 12:04:10.072] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+[2023-01-09 12:04:10.113] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:04:10.373] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:04:10.373] [nas] [info] PDU Session establishment is successful PSI[2]
+[2023-01-09 12:04:10.618] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun103, 10.60.0.195] is up.
+[2023-01-09 12:04:23.412] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:04:23.513] [nas] [error] No response from RRC from UAC checks, considering access attempt is barred
+[2023-01-09 12:04:40.114] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+[2023-01-09 12:04:40.116] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:04:40.232] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:04:40.232] [nas] [info] PDU Session establishment is successful PSI[3]
+[2023-01-09 12:04:40.350] [app] [info] Connection setup for PDU session[3] is successful, TUN interface[uesimtun112, 10.60.1.59] is up.
+[2023-01-09 12:04:57.581] [nas] [debug] Sending PDU Session Release Request for PSI[1]
+[2023-01-09 12:04:57.581] [nas] [debug] Sending PDU Session Release Request for PSI[2]
+[2023-01-09 12:04:57.581] [nas] [debug] Sending PDU Session Release Request for PSI[3]
+[2023-01-09 12:04:57.611] [nas] [debug] PDU Session Release Command received
+[2023-01-09 12:04:57.611] [nas] [debug] Performing local release of PDU session[1]
+[2023-01-09 12:04:57.626] [nas] [debug] PDU Session Release Command received
+[2023-01-09 12:04:57.626] [nas] [debug] Performing local release of PDU session[2]
+[2023-01-09 12:04:57.627] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:04:57.627] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:04:57.627] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[3]
+[2023-01-09 12:05:06.653] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:05:06.757] [nas] [error] No response from RRC from UAC checks, considering access attempt is barred
+[2023-01-09 12:05:23.166] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+[2023-01-09 12:05:23.166] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:05:23.266] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:05:23.266] [nas] [info] PDU Session establishment is successful PSI[1]
+[2023-01-09 12:05:23.430] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun56, 10.60.1.188] is up.
+[2023-01-09 12:05:31.825] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:05:31.926] [nas] [error] No response from RRC from UAC checks, considering access attempt is barred
+[2023-01-09 12:05:48.192] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+[2023-01-09 12:05:48.194] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:05:48.346] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:05:48.346] [nas] [info] PDU Session establishment is successful PSI[2]
+[2023-01-09 12:05:48.419] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun114, 10.60.2.4] is up.
+[2023-01-09 12:06:03.992] [nas] [debug] Sending PDU Session Release Request for PSI[1]
+[2023-01-09 12:06:03.992] [nas] [debug] Sending PDU Session Release Request for PSI[2]
+[2023-01-09 12:06:03.992] [nas] [debug] Sending PDU Session Release Request for PSI[3]
+[2023-01-09 12:06:04.043] [nas] [debug] PDU Session Release Command received
+[2023-01-09 12:06:04.043] [nas] [debug] Performing local release of PDU session[1]
+[2023-01-09 12:06:04.055] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:06:04.055] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:06:04.055] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[2]
+[2023-01-09 12:06:04.055] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:06:04.055] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:06:04.055] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[3]
+[2023-01-09 12:06:12.050] [nas] [debug] Sending PDU Session Release Request for PSI[2]
+[2023-01-09 12:06:12.050] [nas] [debug] Sending PDU Session Release Request for PSI[3]
+[2023-01-09 12:06:12.181] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:06:12.181] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:06:12.181] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[2]
+[2023-01-09 12:06:12.181] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:06:12.181] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:06:12.181] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[3]
+[2023-01-09 12:06:19.092] [nas] [debug] Sending PDU Session Release Request for PSI[2]
+[2023-01-09 12:06:19.092] [nas] [debug] Sending PDU Session Release Request for PSI[3]
+[2023-01-09 12:06:19.127] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:06:19.127] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:06:19.127] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[2]
+[2023-01-09 12:06:19.127] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:06:19.127] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:06:19.127] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[3]
+[2023-01-09 12:06:29.126] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:06:29.231] [nas] [error] No response from RRC from UAC checks, considering access attempt is barred
+[2023-01-09 12:06:45.276] [nas] [warning] Retransmitting PDU Session Establishment Request due to T3580 expiry
+[2023-01-09 12:06:45.284] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:06:45.452] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:06:45.452] [nas] [info] PDU Session establishment is successful PSI[1]
+[2023-01-09 12:06:45.626] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun4, 10.60.2.153] is up.
+[2023-01-09 12:06:56.295] [nas] [debug] De-registration required due to [NORMAL]
+[2023-01-09 12:06:56.305] [nas] [debug] Starting de-registration procedure due to [NORMAL]
+[2023-01-09 12:06:56.305] [nas] [debug] Performing local release of PDU session[1]
+[2023-01-09 12:06:56.305] [nas] [debug] Performing local release of PDU session[2]
+[2023-01-09 12:06:56.305] [nas] [debug] Performing local release of PDU session[3]
+[2023-01-09 12:06:56.305] [nas] [info] UE switches to state [MM-DEREGISTER-INITIATED]
+[2023-01-09 12:06:56.341] [nas] [debug] De-registration accept received
+[2023-01-09 12:06:56.341] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-01-09 12:06:56.341] [nas] [info] De-registration is successful
+[2023-01-09 12:06:56.341] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-01-09 12:06:56.341] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-01-09 12:06:56.341] [nas] [debug] Sending Initial Registration
+[2023-01-09 12:06:56.341] [nas] [debug] Deleting NAS security context
+[2023-01-09 12:06:56.341] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-01-09 12:06:56.352] [rrc] [debug] RRC Release received
+[2023-01-09 12:06:56.352] [nas] [info] UE switches to state [CM-IDLE]
+[2023-01-09 12:06:56.352] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-01-09 12:06:56.352] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2023-01-09 12:06:56.352] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2023-01-09 12:07:07.320] [nas] [debug] NAS timer[3511] expired [1]
+[2023-01-09 12:07:07.320] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2023-01-09 12:07:07.321] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:07:07.321] [nas] [debug] Sending Initial Registration
+[2023-01-09 12:07:07.321] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-01-09 12:07:07.321] [rrc] [debug] Sending RRC Setup Request
+[2023-01-09 12:07:07.324] [rrc] [info] RRC connection established
+[2023-01-09 12:07:07.324] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-01-09 12:07:07.324] [nas] [info] UE switches to state [CM-CONNECTED]
+[2023-01-09 12:07:07.490] [nas] [debug] Authentication Request received
+[2023-01-09 12:07:07.517] [nas] [debug] Security Mode Command received
+[2023-01-09 12:07:07.517] [nas] [debug] Selected integrity[2] ciphering[0]
+[2023-01-09 12:07:07.552] [nas] [debug] Registration accept received
+[2023-01-09 12:07:07.552] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2023-01-09 12:07:07.552] [nas] [info] UE switches to state [5U1-UPDATED]
+[2023-01-09 12:07:07.552] [nas] [debug] Sending Registration Complete
+[2023-01-09 12:07:07.552] [nas] [info] Initial Registration is successful
+[2023-01-09 12:07:07.552] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:07:07.557] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:07:07.811] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:07:07.811] [nas] [info] PDU Session establishment is successful PSI[1]
+[2023-01-09 12:07:07.965] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun41, 10.60.2.220] is up.
+[2023-01-09 12:07:23.359] [nas] [warning] PDU session release procedure could not start: PS[2] is not active already
+[2023-01-09 12:07:28.400] [nas] [debug] De-registration required due to [NORMAL]
+[2023-01-09 12:07:28.410] [nas] [debug] Starting de-registration procedure due to [NORMAL]
+[2023-01-09 12:07:28.410] [nas] [debug] Performing local release of PDU session[1]
+[2023-01-09 12:07:28.410] [nas] [info] UE switches to state [MM-DEREGISTER-INITIATED]
+[2023-01-09 12:07:28.484] [nas] [debug] De-registration accept received
+[2023-01-09 12:07:28.484] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-01-09 12:07:28.484] [nas] [info] De-registration is successful
+[2023-01-09 12:07:28.484] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-01-09 12:07:28.484] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-01-09 12:07:28.484] [nas] [debug] Sending Initial Registration
+[2023-01-09 12:07:28.484] [nas] [debug] Deleting NAS security context
+[2023-01-09 12:07:28.484] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-01-09 12:07:28.484] [rrc] [debug] RRC Release received
+[2023-01-09 12:07:28.484] [nas] [info] UE switches to state [CM-IDLE]
+[2023-01-09 12:07:28.484] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-01-09 12:07:28.484] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2023-01-09 12:07:28.484] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2023-01-09 12:07:39.367] [nas] [debug] NAS timer[3511] expired [1]
+[2023-01-09 12:07:39.367] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2023-01-09 12:07:39.372] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:07:39.372] [nas] [debug] Sending Initial Registration
+[2023-01-09 12:07:39.372] [rrc] [debug] Sending RRC Setup Request
+[2023-01-09 12:07:39.372] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-01-09 12:07:39.373] [rrc] [info] RRC connection established
+[2023-01-09 12:07:39.373] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-01-09 12:07:39.373] [nas] [info] UE switches to state [CM-CONNECTED]
+[2023-01-09 12:07:39.537] [nas] [debug] Authentication Request received
+[2023-01-09 12:07:39.558] [nas] [debug] Security Mode Command received
+[2023-01-09 12:07:39.558] [nas] [debug] Selected integrity[2] ciphering[0]
+[2023-01-09 12:07:39.619] [nas] [debug] Registration accept received
+[2023-01-09 12:07:39.619] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2023-01-09 12:07:39.619] [nas] [info] UE switches to state [5U1-UPDATED]
+[2023-01-09 12:07:39.619] [nas] [debug] Sending Registration Complete
+[2023-01-09 12:07:39.619] [nas] [info] Initial Registration is successful
+[2023-01-09 12:07:39.619] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:07:39.619] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:07:39.711] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:07:39.711] [nas] [info] PDU Session establishment is successful PSI[1]
+[2023-01-09 12:07:39.922] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun158, 10.60.3.44] is up.
+[2023-01-09 12:07:55.470] [nas] [warning] PDU session release procedure could not start: PS[2] is not active already
+[2023-01-09 12:08:03.529] [nas] [warning] PDU session release procedure could not start: PS[2] is not active already
+[2023-01-09 12:08:11.564] [nas] [debug] Sending PDU Session Release Request for PSI[1]
+[2023-01-09 12:08:11.876] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:08:11.877] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:08:11.877] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[1]
+[2023-01-09 12:08:22.640] [nas] [debug] De-registration required due to [NORMAL]
+[2023-01-09 12:08:22.650] [nas] [debug] Starting de-registration procedure due to [NORMAL]
+[2023-01-09 12:08:22.650] [nas] [debug] Performing local release of PDU session[1]
+[2023-01-09 12:08:22.650] [nas] [info] UE switches to state [MM-DEREGISTER-INITIATED]
+[2023-01-09 12:08:22.725] [nas] [debug] De-registration accept received
+[2023-01-09 12:08:22.725] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-01-09 12:08:22.725] [nas] [info] De-registration is successful
+[2023-01-09 12:08:22.725] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2023-01-09 12:08:22.725] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2023-01-09 12:08:22.725] [nas] [debug] Sending Initial Registration
+[2023-01-09 12:08:22.725] [nas] [debug] Deleting NAS security context
+[2023-01-09 12:08:22.725] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-01-09 12:08:22.732] [rrc] [debug] RRC Release received
+[2023-01-09 12:08:22.732] [nas] [info] UE switches to state [CM-IDLE]
+[2023-01-09 12:08:22.732] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2023-01-09 12:08:22.732] [nas] [info] UE switches to state [5U2-NOT-UPDATED]
+[2023-01-09 12:08:22.732] [nas] [info] UE switches to state [MM-DEREGISTERED/ATTEMPTING-REGISTRATION]
+[2023-01-09 12:08:33.428] [nas] [debug] NAS timer[3511] expired [1]
+[2023-01-09 12:08:33.428] [nas] [debug] Initial registration required due to [T3511-EXPIRY-IN-ATT-REG]
+[2023-01-09 12:08:33.428] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:08:33.428] [nas] [debug] Sending Initial Registration
+[2023-01-09 12:08:33.428] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2023-01-09 12:08:33.428] [rrc] [debug] Sending RRC Setup Request
+[2023-01-09 12:08:33.428] [rrc] [info] RRC connection established
+[2023-01-09 12:08:33.428] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2023-01-09 12:08:33.428] [nas] [info] UE switches to state [CM-CONNECTED]
+[2023-01-09 12:08:33.636] [nas] [debug] Authentication Request received
+[2023-01-09 12:08:33.659] [nas] [debug] Security Mode Command received
+[2023-01-09 12:08:33.659] [nas] [debug] Selected integrity[2] ciphering[0]
+[2023-01-09 12:08:33.747] [nas] [debug] Registration accept received
+[2023-01-09 12:08:33.747] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2023-01-09 12:08:33.747] [nas] [info] UE switches to state [5U1-UPDATED]
+[2023-01-09 12:08:33.747] [nas] [debug] Sending Registration Complete
+[2023-01-09 12:08:33.747] [nas] [info] Initial Registration is successful
+[2023-01-09 12:08:33.747] [nas] [debug] Sending PDU Session Establishment Request
+[2023-01-09 12:08:33.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2023-01-09 12:08:33.862] [nas] [debug] PDU Session Establishment Accept received
+[2023-01-09 12:08:33.862] [nas] [info] PDU Session establishment is successful PSI[1]
+[2023-01-09 12:08:33.978] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun158, 10.60.3.172] is up.
+[2023-01-09 12:08:53.733] [nas] [warning] PDU session release procedure could not start: PS[2] is not active already
+[2023-01-09 12:09:01.795] [nas] [debug] Sending PDU Session Release Request for PSI[1]
+[2023-01-09 12:09:01.811] [nas] [error] PDU Session Release Reject received [REQUEST_REJECTED_UNSPECIFIED]
+[2023-01-09 12:09:01.811] [nas] [error] PS release reject received without being requested
+[2023-01-09 12:09:01.811] [nas] [warning] Sending SM Cause[MESSAGE_TYPE_NOT_COMPATIBLE_WITH_THE_PROTOCOL_STATE] for PSI[1]
+[2023-01-09 12:09:14.821] [nas] [debug] De-registration required due to [NORMAL]
+[2023-01-09 12:09:14.831] [nas] [debug] Starting de-registration procedure due to [NORMAL]
+[2023-01-09 12:09:14.831] [nas] [debug] Performing local release of PDU session[1]
+[2023-01-09 12:09:14.831] [nas] [info] UE switches to state [MM-DEREGISTER-INITIATED]
+[2023-01-09 12:09:30.489] [nas] [debug] NAS timer[3521] expired [1]
+[2023-01-09 12:09:30.489] [nas] [debug] Retransmitting De-registration Request due to T3521 expiry
+[2023-01-09 12:09:42.871] [nas] [debug] De-registration required due to [NORMAL]
+[2023-01-09 12:09:45.508] [nas] [debug] NAS timer[3521] expired [2]
+[2023-01-09 12:09:45.508] [nas] [debug] Retransmitting De-registration Request due to T3521 expiry
+[2023-01-09 12:10:00.536] [nas] [debug] NAS timer[3521] expired [3]
+[2023-01-09 12:10:00.536] [nas] [debug] Retransmitting De-registration Request due to T3521 expiry
