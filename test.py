@@ -1,18 +1,16 @@
+# from tqdm import tqdm 
+# from time import sleep
+
+# pbar = tqdm(["a", "b", "c", "d"])
+# s = ""
+# for char in pbar:
+#     print(char)
+#     s = s + char
+#     pbar.set_description("Processing %s" % char)
+
+# print(s)
+
 import os
-import time 
 
-commands = [
-    'ps-establish',
-    'ps-list',
-    'ps-release',
-    'ps-release-all',
-    'deregister normal',
-    'ps-establish IPv4 --emergency',
-    'ps-establish IPv4 --sst 1 --sd 66051 --dnn internet'
-]
-
-
-for i in range(10):
-    os.system("/opt/module/UERANSIM/build/nr-cli -e 'deregister normal' imsi-208930000000103")
-    print("/opt/module/UERANSIM/build/nr-cli -e 'deregister normal' imsi-208930000000103")
-    time.sleep(30)
+s = os.popen("/opt/module/UERANSIM/build/nr-cli -e 'ps-list' imsi-208930000000003 | grep 'PDU Session'").read()
+print(len(s.split('\n')))
