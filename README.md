@@ -1,28 +1,47 @@
 ### Batch-UERANSIM-Cli
 
+Batch-UERANSIM-Cli基于UERANSIM项目实现批量ue连接5G核心网，并执行其nr-cli所支持的信令，产生丰富多样的5G流量。
+
 #### 一、文件结构介绍
 
 ```
+.
 ├── config
-│   ├── free5g-ue-imsi-208930000000004.yaml
-│   └── free5g-ue-imsi-208930000000005.yaml
-├── current.txt
+│   ├── free5gc
+│   └── open5gs
+├── current
+│   ├── free5gc_current.txt
+│   └── open5gs_current.txt
 ├── free5gc.py
 ├── free5gc-ue-template.yaml
-├── nohup.out
+├── logs
+│   ├── free5gc.
+│   └── open5gs
+├── net5g.py
+├── open5gs.py
+├── open5gs-ue-template.yaml
 ├── README.md
-├── resources.py
 ├── requirements.txt
-└── run.py
+├── resources
+│   ├── commonConfig.py
+│   ├── free5gcConfig.py
+│   ├── __init__.py
+│   ├── ip.py
+│   └── open5gsConfig.py
+├── run.py
+└── test.py
 ```
 
-- config 目录用作生成free5gc-ue的配置文件保存目录，为的是同时启动多个具有不同IMSI的UE进程，模拟多个设备接入核心网，为了简单起见，不为每个UE设置不同的加密信息，切片信息等，除了IMSI外，其他洞一样
-- current.txt 用于保存当前核心网内最后添加的SIM Card的IMSI的最后几位值
-- free5gc.py 为用于操作的函数
-- resources.py 一些使用到的变量
+- config 目录用作生成ue的配置文件保存目录，为的是同时启动多个具有不同IMSI的UE进程，模拟多个设备接入核心网，为了简单起见，不为每个UE设置不同的加密信息，切片信息等，除了IMSI外，其他一样
+- current 目录中用于保存不同类型的核心网内最后添加的SIM Card的IMSI的最后几位值
+- net5g.py Net5GC类，为公共操作函数的封装
+- free5gc.py Free5GC类继承自Net5GC
+- open5gs.py Open5GS类继承自Net5GC
+- resources 一些参数配置，free5gcConfig.py为Free5GC的参数配置，open5gsConfig.py为Open5GS的参数配置，ip.py配置核心网WebUI地址
 - run.py 执行操作脚本
-- free5gc-ue-template.yaml 用于生成config下面配置信息的模板
-- nohub.out为所以nr-ue执行的命令的日志信息
+- free5gc-ue-template.yaml 用于生成config下面配置信息的模板（free5gc）
+- open5gs-ue-template.yaml 用于生成config下面配置信息的模板 (open5gs)
+- logs 为各个nr-ue执行的命令的日志信息
 - requirements.txt 项目的包依赖
 
 #### 二、知识理论
@@ -32,6 +51,8 @@
 > - UERANSIM - https://github.com/aligungr/UERANSIM
 > - Free5GC - https://github.com/free5gc/free5gc
 > - Free5GC Docker-Compose - https://github.com/free5gc/free5gc-compose
+> - Open5GS - https://open5gs.org/open5gs/docs/
+> - Open5GS Docker-Compose - https://github.com/herlesupreeth/docker_open5gs
 
 主要模拟UERANSIM的`nr-cli`命令控制UE操作，由于只存在两个可以在部署好的环境有效的执行的命令，这命令包括`ps-release`、`ps-release-all`、`deregister normal`、`ps-establish`，即模拟PDU会话释放、取消注册和建立PDU会话。
 
@@ -41,18 +62,21 @@
 
 依赖包安装 `pip3 install -r requirements.txt`
 
-操作前，打开`resources.py`文件，将`free5gcIP`修改为free5GC核心网安装主机的IP地址
+操作前，打开`resources/ip.py`文件，将`free5gcIP`修改为free5GC核心网安装主机的IP地址或将open5gsIP改为open5gsIP改为Open5GS核心网地址
+
+> Notice: 如果需要使用Open5GS核心网，需要使用参数 --net5gc open5gs
 
 获取一些帮助`python3 run.py -h`
 
 ```
-usage: free5gc.py [-h] [--sec SEC] [--ue UE] [--simcard SIMCARD]
+usage: run.py [-h] [--sec SEC] [--ue UE] [--simcard SIMCARD] [--net5gc NET5GC]
 
 optional arguments:
   -h, --help         show this help message and exit
   --sec SEC          How long does it run, default 10s
   --ue UE            The number of ues, default 1
   --simcard SIMCARD  The number of SimCards, default 2
+  --net5gc NET5GC    The type of 5g core network, 'free5gc' or 'open5gs', default free5gc
 ```
 
 第一次执行需要先让核心网注册一些IMSI信息，执行命令
