@@ -90,3 +90,50 @@ python3 run.py --simcard 10 --ue 5 --sec 100
 
 1. 先注册一些UE在核心网站，`python3 run.py --simcard 10`
 2. 多个UE经常并行发送信令到核心网，`python3 run.py --ue 5 --sec 100`
+
+### 四、TroubleShooting
+（1）Maybe there are some problem in your core network, please check it.
+```python
+def randomCommands(self, ueId, over):
+    while True:
+        if time.perf_counter() >= over:
+            break
+        command_id = random.choice(self.commands_id)
+        command = self.commands[command_id]
+        pduNum_before = None
+        if command == "ps-release":
+            pduId = self._randomChoicePDUId(ueId)
+            if pduId is None:
+                continue
+            command = command + " " + str(pduId);
+            pduNum_before = self._couterPDU(ueId)
+        execute_cmd = "/opt/module/UERANSIM/build/nr-cli -e '%s' %s" % (command, ueId)
+        print("LOG:  execute %s" % execute_cmd)
+        os.system(execute_cmd)
+        timer = 0
+        flag = True
+        while(True):
+            if self._isCommandFinish(command_id, ueId, pduNum_before):
+                break
+            # 2 minutes, 2*12*5 seconds
+            if timer >= 2*12:
+                if not flag:
+                    raise RuntimeError("Maybe there are some problem in your core network, please check it.")
+                self._deregisterByUeId(ueId)
+                timer = 0
+                flag = False
+                
+            time.sleep(5)
+            timer += 1
+```
+执行过程中如果出现了`Maybe there are some problem in your core network, please check it.`异常，经过检查，并非核心网异常，尝试修改Net5GC.py下timer的判断范围，增加时长。
+
+（2）执行一段时间后，UE虚拟化出的网卡消失
+
+出现改问题的原因有一下可能：
+
+① UPF与SMF失联
+
+② AMF出现问题
+
+目前的解决办法是重启核心网
