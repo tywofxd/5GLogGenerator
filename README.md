@@ -28,8 +28,7 @@ Batch-UERANSIM-Cli基于UERANSIM项目实现批量ue连接5G核心网，并执�
 │   ├── __init__.py
 │   ├── ip.py
 │   └── open5gsConfig.py
-├── run.py
-└── test.py
+└── run.py
 ```
 
 - config 目录用作生成ue的配置文件保存目录，为的是同时启动多个具有不同IMSI的UE进程，模拟多个设备接入核心网，为了简单起见，不为每个UE设置不同的加密信息，切片信息等，除了IMSI外，其他一样
