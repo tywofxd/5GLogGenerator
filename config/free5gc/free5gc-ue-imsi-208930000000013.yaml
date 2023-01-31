@@ -6,9 +6,9 @@ mcc: '208'
 mnc: '93'
 
 # Permanent subscription key
-key: '465B5CE8B199B49FAA5F0A2EE238A6BC'
+key: '8baf473f2f8fd09487cccbd7097c6862'
 # Operator code (OP or OPC) of the UE
-op: 'E8ED289DEBA952E4283B54E88E6183CA'
+op: '8e27b6af0e692e750f32667a3b14605d'
 # This value specifies the OP type and it can be either 'OP' or 'OPC'
 opType: 'OPC'
 # Authentication Management Field (AMF) value
@@ -41,13 +41,13 @@ sessions:
   - type: 'IPv4'
     apn: 'internet'
     slice:
-      sst: 1
-      sd: 0xffffff
+      sst: 0x01
+      sd: 0x010203
 
 # Configured NSSAI for this UE by HPLMN
 configured-nssai:
-  - sst: 1
-    sd: 0xffffff
+  - sst: 0x01
+    sd: 0x010203
 
 # Default Configured NSSAI for this UE
 default-nssai:

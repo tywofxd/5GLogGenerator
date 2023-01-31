@@ -1,3 +1,5 @@
-free5gcIP = "192.168.59.130"
-open5gsIP = "192.168.59.134"
+free5gcIP = "192.168.5.5"
+free5gcPort = "30500"
+open5gsIP = "127.0.0.1"
+open5gsPort = "3000"
 gnbIP = "192.168.59.134"

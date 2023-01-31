@@ -7,6 +7,8 @@ import random
 from tqdm import tqdm
 import threading
 
+UERANSIM_dir = "/home/osboxes/UERANSIM/build/"
+
 class Net5GC():
     def __init__(self, ne5gc_type):
         self.commands = []
@@ -58,7 +60,7 @@ class Net5GC():
         self._writeCurrentUeIMSI(currentUeIMSI + numbers)
 
     def _randomChoicePDUId(self, ueId):
-        pdus = os.popen("/opt/module/UERANSIM/build/nr-cli -e ps-list %s | grep 'PDU Session'" % ueId).read()
+        pdus = os.popen("%snr-cli -e ps-list %s | grep 'PDU Session'" %(UERANSIM_dir, ueId)).read()
         # pdu_count = self._couterPDU(ueId)
 
         pdus = pdus.split("\n")[:-1]
@@ -74,7 +76,7 @@ class Net5GC():
         return selected_pduId
 
     def _couterPDU(self, ueId):
-        pdus = os.popen("/opt/module/UERANSIM/build/nr-cli -e ps-list " + ueId).read()
+        pdus = os.popen(UERANSIM_dir + "nr-cli -e ps-list " + ueId).read()
         return pdus.count("PDU Session")
 
     def randomCommands(self, ueId, over):
@@ -90,7 +92,7 @@ class Net5GC():
                     continue
                 command = command + " " + str(pduId);
                 pduNum_before = self._couterPDU(ueId)
-            execute_cmd = "/opt/module/UERANSIM/build/nr-cli -e '%s' %s" % (command, ueId)
+            execute_cmd = "%snr-cli -e '%s' %s" % (UERANSIM_dir, command, ueId)
             print("LOG:  execute %s" % execute_cmd)
             os.system(execute_cmd)
             timer = 0
@@ -99,10 +101,12 @@ class Net5GC():
                 if self._isCommandFinish(command_id, ueId, pduNum_before):
                     break
                 # 2 minutes, 2*12*5 seconds
+                # wait 2 minutes for the command to finish; if it cannot finish, deregister it, and wait another 2 minutes to throw the runtimeError.
                 if timer >= 2*12:
                     if not flag:
                         raise RuntimeError("Maybe there are some problem in your core network, please check it.")
                     self._deregisterByUeId(ueId)
+                    command_id = self.commands.index("deregister normal")
                     timer = 0
                     flag = False
                     
@@ -113,20 +117,20 @@ class Net5GC():
     def _isCommandFinish(self, command_id, ueId, pduNum_before=None):
         """Whether a command execute sucessfully."""
         if command_id == 2 and pduNum_before > 1:
-            # ps_release
-            return self._couterPDU(ueId) == pduNum_before + 1
+            # ps_release (more than one ps)
+            return self._couterPDU(ueId) +1 == pduNum_before
         elif command_id in self.commands_id:
-            # ps_release, ps_release_all, deregister, ps_estabish
+            # ps_release (only one ps), ps_release_all, deregister, ps_estabish
             # if suceeded, ue's log contains "TUN interface" 
             ueId_digit = re.search("\d+", ueId).group()
-            log = os.popen("tail -n 5 %s/%s.out| grep 'TUN interface'" % (self.log_dir, ueId_digit)).read()
+            log = os.popen("tail -n 1 %s/%s.out| grep 'TUN interface'" % (self.log_dir, ueId_digit)).read()
             return len(log.split('\n')) > 1
         else:
             raise RuntimeError("Command_id out of index.")
-        return False
+            
 
     def _deregisterByUeId(delf, ueId):
-        os.system("/opt/module/UERANSIM/build/nr-cli -e 'deregister normal' %s" %  ueId)
+        os.system("%snr-cli -e 'deregister normal' %s" %  (UERANSIM_dir, ueId))
 
 
     def _terminateAllUE(self):
@@ -153,24 +157,26 @@ class Net5GC():
         for file in tqdm(files, desc='Starting UEs: '):
             #file.bar.set_description("Start UEs: ")
             log_file = file.split('.')[0].split('-')[3]
-            os.system("nohup /opt/module/UERANSIM/build/nr-ue -c %s/%s > %s/%s.out 2>&1 &" % (self.config_dir, file, self.log_dir, log_file))
+            os.system("nohup %snr-ue -c %s/%s > %s/%s.out 2>&1 &" % (UERANSIM_dir, self.config_dir, file, self.log_dir, log_file))
             time.sleep(2)
     
 
     def generate(self, sec):
-        query_ueIds = os.popen("/opt/module/UERANSIM/build/nr-cli -d | grep imsi").read()
+        query_ueIds = os.popen(UERANSIM_dir + "nr-cli -d | grep imsi").read()
         ueIds = query_ueIds.split("\n")
         ueIds = ueIds[:-1]
         print(ueIds)
         start = time.perf_counter()
+        ueThreads = []
         for ueId in ueIds:
             try:
                 thread = threading.Thread(target=self.randomCommands, args=(ueId, start + sec,))
+                ueThreads.append(thread)
                 thread.start()
             except:
                 print("Error: unable to start thread")
 
-        while time.perf_counter() <= start + sec + 3:
-            time.sleep(1)
+        for thread in ueThreads:
+            thread.join()
 
         self._terminateAllUE()

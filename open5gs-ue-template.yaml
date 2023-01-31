@@ -42,10 +42,12 @@ sessions:
     apn: 'internet'
     slice:
       sst: 1
+      sd: 0xffffff
 
 # Configured NSSAI for this UE by HPLMN
 configured-nssai:
   - sst: 1
+    sd: 0xffffff
 
 # Default Configured NSSAI for this UE
 default-nssai:

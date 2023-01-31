@@ -1,4 +1,4 @@
-from resources.ip import open5gsIP
+from resources.ip import open5gsIP,open5gsPort
 commands = [
     'ps-establish',
     'ps-list',
@@ -11,12 +11,12 @@ commands = [
 
 commands_id = [2, 3, 4, 5]
 
-csrf_url = "http://" + open5gsIP + ":3000/api/auth/csrf"
+csrf_url = "http://" + open5gsIP + ":" + open5gsPort + "/api/auth/csrf"
 headers_ = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 }
 
-login_url = "http://" + open5gsIP + ":3000/api/auth/login"
+login_url = "http://" + open5gsIP + ":" + open5gsPort + "/api/auth/login"
 login_data = "{\"username\": \"admin\", \"password\": \"1423\"}"
 headers_post = {
     "Content-Type": "application/json",
@@ -24,13 +24,13 @@ headers_post = {
     "X-CSRF-TOKEN": "",
     "Cookie": ""
 }
-session_url = "http://" + open5gsIP + ":3000/api/auth/session"
+session_url = "http://" + open5gsIP + ":" + open5gsPort +  "/api/auth/session"
 headers_hascookie = {
     "User-Agent": headers_["User-Agent"],
     "Cookie": ""
 }
 
-subscriber_url = "http://" + open5gsIP + ":3000/api/db/Subscriber"
+subscriber_url = "http://" + open5gsIP + ":" + open5gsPort + "/api/db/Subscriber"
 headers_auth = {
     "Content-Type": headers_post["Content-Type"],
     "User-Agent": headers_["User-Agent"],

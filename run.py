@@ -62,4 +62,4 @@ if __name__ == '__main__':
         net5gc.recordSIMCard(numbers=args.simcard)
     if args.ue:
         net5gc.startUEs(args.ue)
-    net5gc.generate(args.sec)
+        net5gc.generate(args.sec)
