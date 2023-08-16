@@ -100,17 +100,18 @@ class Net5GC():
             while(True):
                 if self._isCommandFinish(command_id, ueId, pduNum_before):
                     break
-                # 2 minutes, 2*12*5 seconds
-                # wait 2 minutes for the command to finish; if it cannot finish, deregister it, and wait another 2 minutes to throw the runtimeError.
-                if timer >= 2*12:
+                # 5 minutes, 5*12*5 seconds
+                # wait 5 minute+2*5 seconds for the command to finish; if it cannot finish, deregister it, and wait another 5 minute+2*5 seconds to throw the runtimeError.
+                if timer >= 1.5*12:
                     if not flag:
                         raise RuntimeError("Maybe there are some problem in your core network, please check it.")
                     self._deregisterByUeId(ueId)
                     command_id = self.commands.index("deregister normal")
                     timer = 0
+                    # if the flag is always true, then run deregister every 5 minutes until the UE recover
                     flag = False
                     
-                time.sleep(5)
+                time.sleep(6)
                 timer += 1
     
     
